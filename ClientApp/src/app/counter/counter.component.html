@@ -1,0 +1,24 @@
+<h1>Counter</h1>
+
+<p>This is a simple example of an Angular component.</p>
+
+<p aria-live="polite">Current count: <strong>{{ currentCount }}</strong></p>
+
+<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
+
+<h2>Welcome to Chirpus Pizza!</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Item Name</td>
+      <td>Category</td>
+      <td>Price</td>
+    </tr>
+    <tr *ngFor="let currMenuItem of theMenuItems">
+      <td>{{currMenuItem.itemName}}</td>
+      <td>{{currMenuItem.Category}}</td>
+      <td>{{currMenuItem.Price | currency}}</td>
+    </tr>
+  </tbody>
+</table>
